@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    
+    /* margin: auto;
+    margin-top: 150px; */
+    background-color: var(--White);
+    border-radius: 12px;
+    max-width: 600px;
+}
+
+.image img {
+    max-width: 300px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.content h1 {
+    font-family: "Fraunces", serif;
+}
+
+.container p {
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price h1 {
+    color: var(--Dark-cyan);
+}
+
+.price p {
+    text-decoration: line-through;
+}
+
+.cart {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.cart p {
+    color: var(--White);
+}
